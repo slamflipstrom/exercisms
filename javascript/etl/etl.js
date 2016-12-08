@@ -1,15 +1,15 @@
 class ETL {
 
-  transform(old_format) {
-    let new_format = {};
+  transform(oldFormat) {
+    let newFormat = {};
 
-    for (let score in old_format) {
-      let letters = old_format[score]
+    for (let score in oldFormat) {
+      let letters = oldFormat[score]
       for (let i = 0; i < letters.length; i++){
-        new_format[letters[i].toLowerCase()] = parseInt(score);
+        newFormat[letters[i].toLowerCase()] = parseInt(score);
       }
     }
-    return new_format
+    return newFormat
   }
 }
 
